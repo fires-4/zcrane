@@ -1,0 +1,31 @@
+{
+  "name": "zcrane",
+  "version": "0.0.4",
+  "type": "module",
+  "module": "dist/zcrane.js",
+  "main": "dist/zcrane.umd.cjs",
+  "typings": "dist/zcrane.d.ts",
+  "license": "MIT",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "module": "./dist/zcrane.js",
+    "import": "./dist/zcrane.js",
+    "require": "./dist/zcrane.umd.js",
+    "default": "./dist/zcrane.js"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.5.2"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.2"
+  }
+}
